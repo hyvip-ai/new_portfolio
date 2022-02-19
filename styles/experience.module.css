@@ -1,0 +1,81 @@
+* .timeline {
+  /* Styling */
+  margin: 4em auto;
+  position: relative;
+  max-width: 46em;
+  list-style-type: none;
+  padding-left: 7rem;
+}
+* .timeline:before {
+  background-color: black;
+  content: "";
+  margin-left: -1px;
+  position: absolute;
+  top: 0;
+  left: 9em;
+  width: 2px;
+  height: 100%;
+}
+.timeline_event {
+  position: relative;
+}
+.timeline_event:hover .timeline_event_icon {
+  transform: rotate(45deg);
+  background-color: #a83279;
+}
+.timeline_event:hover .timeline_event_thumbnail {
+  box-shadow: inset 40em 0 0 0 #a83279;
+}
+.timeline_event_copy {
+  padding: 2em;
+  position: relative;
+  top: -1.875em;
+  left: 4em;
+  width: 80%;
+}
+.timeline_event_copy h3 {
+  font-size: 2em;
+  color: #3d4351;
+}
+.timeline_event_copy h4 {
+  font-size: 1.4em;
+  margin-bottom: 1.2em;
+  color: #2c3e50;
+}
+.timeline_event_copy strong {
+  font-weight: 700;
+}
+.timeline_event_copy p:not(.timeline_event_thumbnail) {
+  padding-bottom: 1.2em;
+  font-size: 1.2rem;
+  color: rgb(22, 22, 22);
+}
+.timeline_event_icon {
+  transition: transform 0.2s ease-in;
+  transform: rotate 45deg;
+  background-color: black;
+  outline: 10px solid white;
+  display: block;
+  margin: 0.5em 0.5em 0.5em -0.5em;
+  position: absolute;
+  top: 0;
+  left: 2em;
+  width: 1em;
+  height: 1em;
+}
+.timeline_event_thumbnail {
+  transition: box-shadow 0.5s ease-in 0.1s;
+  color: white;
+  background-color: black;
+  box-shadow: inset 0 0 0 0em #ef795a;
+  display: inline-block;
+  margin-bottom: 1.2em;
+  padding: 0.25em 1em 0.2em 1em;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 550px) {
+  .timeline {
+    padding-left: 5rem;
+  }
+}

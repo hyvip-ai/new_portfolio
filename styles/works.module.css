@@ -1,0 +1,86 @@
+.workCard {
+  width: 30rem;
+  height: 100%;
+  padding: 1.6rem;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  transition: all 0.3s;
+}
+.workCard:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+}
+.image {
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+.image .badge {
+  position: absolute;
+  z-index: 9;
+  bottom: -2%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  font-size: 1.2rem;
+}
+.image img {
+  object-fit: cover;
+  object-position: center;
+}
+
+.data {
+  padding: 0.8rem;
+  text-align: center;
+}
+.data h3 {
+  font-size: 1.5rem;
+  margin: 0.5rem auto;
+}
+.data p {
+  font-size: 1.3rem;
+  padding-top: 0.5rem;
+}
+.tech {
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0.6rem 0.4rem;
+  display: inline-block;
+}
+.switch {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.switch span {
+  padding: 0.8rem 1.3em;
+  display: inline-block;
+  background-color: white;
+  font-size: 1.2rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  margin: 0rem 0.5rem;
+  transition: all 0.3s;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  margin-bottom: 1rem;
+}
+.activeSwitch {
+  background-color: #313bac !important;
+  color: #fff;
+}
+@media (max-width: 450px) {
+  .workCard {
+    width: 27rem;
+  }
+}

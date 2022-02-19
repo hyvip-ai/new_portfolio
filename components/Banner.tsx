@@ -1,0 +1,63 @@
+import React, { useEffect } from "react";
+import { Banner } from "../types/all";
+import classes from "../styles/banner.module.css";
+import Image from "next/image";
+import Typed from "typed.js";
+interface bannerProps {
+  bannerData: Banner;
+}
+function Banner(props: bannerProps) {
+  useEffect(() => {
+    var typed = new Typed(".types", {
+      strings: props.bannerData.typing,
+      typeSpeed: 100,
+      loop: true,
+      showCursor: true,
+      cursorChar: "_",
+      autoInsertCss: true,
+      backSpeed: 100,
+    });
+  }, [props.bannerData.typing]);
+  return (
+    <>
+      <section className={`section ${classes.banner} pt`}>
+        <div className={classes.row}>
+          <div className={classes.col}>
+            <h1>{props.bannerData.pageIntro}</h1>
+            <h3>{props.bannerData.me}</h3>
+            <h3>
+              <span className="types"></span>
+            </h3>
+          </div>
+          <div className={classes.col}>
+            <div className={classes.image}>
+              <Image
+                src="/Me.jpeg"
+                alt="Rajat Mondal"
+                layout="responsive"
+                height={640}
+                width={640}
+              />
+              <div className={classes.data}>
+                <a href="mailto:rm2932002@gmail.com">
+                  {props.bannerData.imageOverlayText}
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div className={classes.small}>
+        <Image
+          src="/Me.jpeg"
+          layout="responsive"
+          height={640}
+          width={640}
+          alt="Rajat Mondal"
+        />
+      </div>
+    </>
+  );
+}
+
+export default Banner;

@@ -1,9 +1,21 @@
-html,
-body {
-  padding: 0;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap");
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+html {
+  height: 100%;
+  font-size: 62.5%;
+}
+body {
+  height: 100%;
+  width: 100%;
+  /* background-image: url("/bgImg.png");
+  background-size: cover;
+  background-position: center; */
 }
 
 a {
@@ -11,6 +23,78 @@ a {
   text-decoration: none;
 }
 
-* {
-  box-sizing: border-box;
+.section {
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0rem 0.5rem;
+  padding-bottom: 8rem;
+}
+.pt {
+  padding-top: 14rem;
+}
+.section_heading {
+  font-size: 5rem;
+  font-family: "Montserrat", sans-serif;
+  color: #2c3e50;
+  -webkit-text-stroke-color: transparent;
+  -webkit-text-fill-color: #56f0c7;
+  -webkit-text-stroke-width: 1px;
+  text-shadow: 4px 4px 0 #2c3e50;
+  position: relative;
+  text-align: center;
+  margin-bottom: 20px;
+  padding-top: 8rem;
+}
+
+@media (min-width: 576px) {
+  .section {
+    width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .section {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .section {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .section {
+    width: 1170px;
+  }
+}
+
+@media (max-width: 500px) {
+  .section_heading {
+    font-size: 4rem;
+  }
+}
+
+.bg_color {
+  background-color: #edf2f8;
+}
+
+.warning {
+  background-color: rgba(255, 193, 7, 0.25);
+}
+.success {
+  background-color: rgba(60, 219, 143, 0.25);
+}
+.danger {
+  background-color: rgba(249, 67, 67, 0.25);
+}
+.primary {
+  background-color: rgba(44, 96, 250, 0.25);
+}
+.motion {
+  display: flex;
+  margin: 2rem 1rem;
+  cursor: pointer;
 }

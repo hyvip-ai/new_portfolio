@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Monoton&display=swap");
+
+.banner .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.banner .row .col {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.image {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.col h1 {
+  font-size: 8rem;
+  font-family: "Monoton";
+  color: #222f3e;
+  font-weight: 400;
+}
+
+.col h3 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.col h3:first-child {
+  color: #222f3e;
+}
+.col h3:last-child {
+  font-size: 2.5rem;
+  color: #1dd1a1;
+  padding: 0px 10px;
+  margin-top: 6px;
+}
+
+.col .image .data {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  font-size: 2.5rem;
+  opacity: 0;
+  transition: all 0.5s;
+}
+.col .image:hover .data {
+  opacity: 1;
+}
+.small {
+  height: 25rem;
+  width: 25rem;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0px auto;
+  margin-bottom: 8rem;
+  display: none;
+}
+@media (max-width: 1200px) {
+  .col h1 {
+    font-size: 5.5rem;
+  }
+  .col h3 {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 768px) {
+  .small {
+    display: block;
+  }
+  .banner {
+    padding-bottom: 2rem;
+  }
+  .banner .row .col {
+    width: 100%;
+    margin: 20px auto;
+  }
+  .banner .row .col:last-child {
+    display: none;
+  }
+  .col h1 {
+    font-size: 7rem;
+  }
+  .col h3 {
+    font-size: 3.5rem;
+  }
+}
+@media (max-width: 600px) {
+  .col h1 {
+    font-size: 4.5rem;
+  }
+  .col h3 {
+    font-size: 2.8rem;
+  }
+  .col h3:last-child {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 400px) {
+  .col .image .data {
+    font-size: 1.5rem;
+  }
+}

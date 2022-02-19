@@ -1,0 +1,32 @@
+.heading {
+  font-size: 3.7rem;
+  font-weight: 600;
+  text-align: center;
+  color: #1dd1a1;
+}
+
+.para {
+  font-size: 1.4rem;
+  text-align: center;
+  color: #222f3e;
+  padding: 1rem 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .lottie,
+  .data {
+    width: 100%;
+  }
+  .row {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 500px) {
+  .heading {
+    font-size: 3rem;
+  }
+  .para {
+    font-size: 1.2rem;
+  }
+}
