@@ -49,6 +49,9 @@ a {
   margin-bottom: 20px;
   padding-top: 8rem;
 }
+.animate {
+  transform: translateY(100px);
+}
 
 @media (min-width: 576px) {
   .section {
