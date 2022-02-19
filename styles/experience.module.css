@@ -78,4 +78,7 @@
   .timeline {
     padding-left: 5rem;
   }
+  .timeline::before {
+    left: 7rem;
+  }
 }
