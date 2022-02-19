@@ -20,7 +20,7 @@ export default function Home(props: Combined) {
       <Head>
         <title>Rajat Mondal</title>
         <meta property="og:title" content="Rajat Mondal Portfolio" />
-        <meta property="og:image" content="/me.jpg" />
+        <meta property="og:image" content="https://ibb.co/gPBpMNx" />
         <meta
           property="og:description"
           content="Hi I am Rajat, a 19 year old Web Developer, living in Kolkata, India. I am pursuing Electronics and Communication Engineering, also I am working for some amazing folks at CodeBuddy. I love JavaScript because I can relate JavaScript to life as its unpredictable. Also, I know how to google things"
