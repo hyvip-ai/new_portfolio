@@ -13,12 +13,11 @@
   justify-content: center;
   align-items: center;
   margin: 1rem 1rem;
-  padding: 2.5rem;
+  font-size: 5rem;
 }
 .linkedin {
   color: #0077b5;
   background-color: #b7e6ff;
-  padding: 3rem;
 }
 .hackerrank {
   color: #1ba94c;
