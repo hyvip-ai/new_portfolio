@@ -29,6 +29,9 @@
   resize: vertical;
 }
 .right button {
+  margin: 2rem 0rem;
+}
+.right button {
   display: block;
   width: 100%;
   border-radius: 5rem;
