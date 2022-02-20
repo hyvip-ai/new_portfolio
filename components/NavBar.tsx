@@ -1,6 +1,7 @@
 import React, { useEffect, useMemo, useRef, useState } from "react";
 import classes from "../styles/navbar.module.css";
 import { TimelineLite } from "gsap/dist/gsap";
+import Link from "next/link";
 function NavBar() {
   let nav = useRef();
   let bar = useRef();
@@ -44,19 +45,19 @@ function NavBar() {
       </nav>
       <div id="film" className={classes.navbar_film}>
         <div className={classes.links}>
-          <a href="#" className={classes.link}>
+          <a href="#home" className={classes.link} onClick={navHandler}>
             <span className={`link_anim ${classes.link_anim}`}>Home</span>
           </a>
-          <a href="#" className={classes.link}>
+          <a href="#about" className={classes.link} onClick={navHandler}>
             <span className={`link_anim ${classes.link_anim}`}>About</span>
           </a>
-          <a href="#" className={classes.link}>
+          <a href="#skills" className={classes.link} onClick={navHandler}>
             <span className={`link_anim ${classes.link_anim}`}>Skills</span>
           </a>
-          <a href="#" className={classes.link}>
+          <a href="#projects" className={classes.link} onClick={navHandler}>
             <span className={`link_anim ${classes.link_anim}`}>Projects</span>
           </a>
-          <a href="#" className={classes.link}>
+          <a href="#contact" className={classes.link} onClick={navHandler}>
             <span className={`link_anim ${classes.link_anim}`}>Contact</span>
           </a>
         </div>

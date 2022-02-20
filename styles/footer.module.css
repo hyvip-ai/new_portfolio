@@ -1,2 +1,30 @@
-.footer_image {
+.footer {
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-top: 5rem;
+}
+
+.link {
+  height: 10rem;
+  width: 10rem;
+  background-color: rgb(174, 176, 179);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 1rem;
+  padding: 2.5rem;
+}
+.linkedin {
+  color: #0077b5;
+  background-color: #b7e6ff;
+  padding: 3rem;
+}
+.hackerrank {
+  color: #1ba94c;
+  background-color: #c6e7d1;
+}
+.npm {
+  color: rgb(204, 53, 52);
+  background-color: #fbd9d9;
 }

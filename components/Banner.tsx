@@ -37,6 +37,7 @@ function Banner(props: bannerProps) {
                 layout="responsive"
                 height={640}
                 width={640}
+                priority
               />
               <div className={classes.data}>
                 <a href="mailto:rm2932002@gmail.com">

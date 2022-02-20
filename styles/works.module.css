@@ -22,6 +22,43 @@
   overflow: hidden;
   position: relative;
 }
+.image .overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: all 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.image .overlay button {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.6);
+  margin: 0px 1rem;
+  border: none;
+  outline: none;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  padding: 1.3rem;
+}
+.image .overlay button:first-child {
+  font-size: 25px;
+}
+.image .overlay button:active {
+  transform: scale(0.95);
+}
+.workCard:hover .image .overlay {
+  opacity: 1;
+}
 .image .badge {
   position: absolute;
   z-index: 9;

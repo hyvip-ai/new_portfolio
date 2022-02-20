@@ -13,7 +13,6 @@ import Progress from "../components/Progress";
 import Skills from "../components/Skills";
 import { v4 as uuid } from "uuid";
 import Footer from "../components/Footer";
-
 export default function Home(props: Combined) {
   return (
     <>
@@ -34,12 +33,16 @@ export default function Home(props: Combined) {
       <NavBar />
       <Progress />
       <main>
+        <div id="home" />
         <Banner bannerData={props.bannerData} />
         <main className="bg_color">
+          <div id="about" />
           <About aboutData={props.aboutData} />
         </main>
+        <div id="skills" />
         <Skills skills={props.skills} />
         <main className="bg_color">
+          <div id="projects" />
           <Works projects={props.projects} />
         </main>
         <WorkExperience workExperienceData={props.workExperienceData} />
@@ -48,11 +51,10 @@ export default function Home(props: Combined) {
         </main>
         <Testimonials testimonialData={props.testimonialData} />
         <main className="bg_color">
+          <div id="contact" />
           <Contact contactDetails={props.contactDetails} />
         </main>
-        <main className="bg_color">
-          <Footer socialLinks={props.socialLinks} />
-        </main>
+        <Footer socialLinks={props.socialLinks} />
       </main>
     </>
   );

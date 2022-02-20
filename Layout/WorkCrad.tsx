@@ -3,6 +3,9 @@ import { Projects } from "../types/all";
 import classes from "../styles/works.module.css";
 import Image from "next/image";
 import Tabs from "../components/Tabs";
+import { faEye } from "@fortawesome/free-solid-svg-icons";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 interface workCardProps {
   work: Projects;
 }
@@ -18,6 +21,14 @@ function WorkCard(props: workCardProps) {
           width={238}
         />
         <div className={classes.badge}>{props.work.tags[0]}</div>
+        <div className={classes.overlay}>
+          <button>
+            <FontAwesomeIcon icon={faGithub} />
+          </button>
+          <button>
+            <FontAwesomeIcon icon={faEye} />
+          </button>
+        </div>
       </div>
       <div className={classes.data}>
         <h3>{props.work.name}</h3>

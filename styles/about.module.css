@@ -2,7 +2,10 @@
   font-size: 3.7rem;
   font-weight: 600;
   text-align: center;
-  color: #1dd1a1;
+  background: linear-gradient(103.22deg, #ae67fa -13.86%, #f49867 99.55%),
+    linear-gradient(0deg, #ffffff, #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .para {
