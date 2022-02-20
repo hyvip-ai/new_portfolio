@@ -93,3 +93,5 @@ export interface Combined {
 }
 
 ```
+
+> To create your own portfolio like this clone the project and make change in the data in getStaticProps function .
