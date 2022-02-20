@@ -6,7 +6,7 @@
 
 #### You can also have a portfolio with same design
 
-```json
+```JS
 export interface Qualification {
   name: string;
   place: string;
