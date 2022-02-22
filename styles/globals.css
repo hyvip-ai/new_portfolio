@@ -55,6 +55,19 @@ a {
   transform: translateY(100px);
 }
 
+body::-webkit-scrollbar {
+  width: 0.8rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: #161616;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #56f0c7;
+  border-radius: 0.8rem;
+}
+
 @media (min-width: 576px) {
   .section {
     width: 540px;

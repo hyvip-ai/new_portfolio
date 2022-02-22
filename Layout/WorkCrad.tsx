@@ -10,6 +10,14 @@ interface workCardProps {
   work: Projects;
 }
 function WorkCard(props: workCardProps) {
+  const urlHandler = () => {
+    if (!props.work.url) {
+      alert(`${props.work.name} is not Hosted, Sorry :')`);
+      return;
+    } else {
+      location.href = props.work.url;
+    }
+  };
   return (
     <div className={classes.workCard}>
       <div className={classes.image}>
@@ -23,9 +31,11 @@ function WorkCard(props: workCardProps) {
         <div className={classes.badge}>{props.work.tags[0]}</div>
         <div className={classes.overlay}>
           <button>
-            <FontAwesomeIcon icon={faGithub} />
+            <a href={props.work.github}>
+              <FontAwesomeIcon icon={faGithub} />
+            </a>
           </button>
-          <button>
+          <button onClick={urlHandler}>
             <FontAwesomeIcon icon={faEye} />
           </button>
         </div>

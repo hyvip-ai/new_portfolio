@@ -58,7 +58,8 @@ export interface Projects {
   techStack: Tech[];
   about: string;
   tags: string[];
-  url?: string;
+  url: string;
+  github: string;
   img: string;
   id: string;
 }

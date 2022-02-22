@@ -15,9 +15,14 @@ const projectTypes = [
   "Game",
 ];
 function Works(props: skillProps) {
-  const [active, setActive] = useState("Various");
+  const [active, setActive] = useState(null);
   const [activeProjects, setActiveProjects] = useState([]);
   useEffect(() => {
+    let active = localStorage.getItem("active");
+    active ? setActive(active) : setActive("Various");
+  }, []);
+  useEffect(() => {
+    localStorage.setItem("active", active);
     let newProjects = props.projects.filter((project) => {
       return project.tags.includes(active);
     });

@@ -219,6 +219,7 @@ export function getStaticProps(): { props: Combined } {
           tags: ["FullStack", "React", "Various"],
           url: "https://react-chat-by-rajat.netlify.app/",
           img: "/about01.png",
+          github: "https://github.com/hyvip-ai/react-chat",
         },
         {
           id: uuid(),
@@ -239,6 +240,8 @@ export function getStaticProps(): { props: Combined } {
             "Just a website like shopify where the user can create their own store",
           tags: ["FullStack", "Angular", "Nodejs", "Various"],
           img: "/about02.png",
+          github: "https://github.com/hyvip-ai/Shopify-clone",
+          url: "",
         },
         {
           id: uuid(),
@@ -264,6 +267,8 @@ export function getStaticProps(): { props: Combined } {
             "A simple socket.io project for group video call , chat , white board collaboration and user list.",
           tags: ["FullStack", "React", "Nodejs", "Various"],
           img: "/about03.png",
+          github: "https://github.com/hyvip-ai/socket",
+          url: "",
         },
         {
           id: uuid(),
@@ -278,8 +283,9 @@ export function getStaticProps(): { props: Combined } {
           about:
             "An exam taking website where user can create their custom exams and play trivia.",
           tags: ["React", "Various"],
-          url: "react-exam-app.netlify.app/",
+          url: "https://react-exam-app.netlify.app/",
           img: "/about04.png",
+          github: "https://github.com/hyvip-ai/exam_taking",
         },
         {
           id: uuid(),
@@ -300,6 +306,8 @@ export function getStaticProps(): { props: Combined } {
             "Just a website to replicate Role Base Authentication system using Angular Auth Guard",
           tags: ["FullStack", "Angular", "Nodejs", "Various"],
           img: "/about01.png",
+          github: "https://github.com/hyvip-ai/angular_role_guard_front",
+          url: "",
         },
         {
           id: uuid(),
@@ -313,8 +321,9 @@ export function getStaticProps(): { props: Combined } {
           ],
           about: "This is a bubble sort algorithm visualizer made with Svelte.",
           tags: ["Svelte", "Various"],
-          url: "sorting-visualizer-by-rajat.netlify.app/",
+          url: "https://sorting-visualizer-by-rajat.netlify.app/",
           img: "/about02.png",
+          github: "https://github.com/hyvip-ai/sorting_algorithm_visualizer",
         },
         {
           id: uuid(),
@@ -328,8 +337,9 @@ export function getStaticProps(): { props: Combined } {
           ],
           about: "Simple Airbnb Clone Integrated with api and Mapbox",
           tags: ["React"],
-          url: "airbnb-clone-by-rajat.netlify.app/",
+          url: "https://airbnb-clone-by-rajat.netlify.app/",
           img: "/about03.png",
+          github: "https://github.com/hyvip-ai/airbnb_clone",
         },
         {
           id: uuid(),
@@ -344,6 +354,8 @@ export function getStaticProps(): { props: Combined } {
           about: "A simple task manager application to keep track of my tasks",
           tags: ["Angular"],
           img: "/about04.png",
+          github: "https://github.com/hyvip-ai/angular_task_manager",
+          url: "https://angular-task-manager-by-rajat.netlify.app/",
         },
         {
           id: uuid(),
@@ -359,6 +371,8 @@ export function getStaticProps(): { props: Combined } {
             "This is a simple website to show your github data and help you to find the repo and redirect you to it.",
           tags: ["Svelte"],
           img: "/about01.png",
+          github: "https://github.com/hyvip-ai/github_stats",
+          url: "https://github-stats-by-rajat.netlify.app/",
         },
         {
           id: uuid(),
@@ -374,6 +388,8 @@ export function getStaticProps(): { props: Combined } {
             "This is a simple simon-says game made with svelte you can play it with your friends.",
           tags: ["Svelte", "Game"],
           img: "/about02.png",
+          github: "https://github.com/hyvip-ai/simon_says_svelte",
+          url: "https://simon-says-by-rajat.netlify.app/",
         },
         {
           id: uuid(),
@@ -388,6 +404,8 @@ export function getStaticProps(): { props: Combined } {
           about: "A simple card matching game made in svelte",
           tags: ["Svelte", "Game"],
           img: "/about03.png",
+          github: "https://github.com/hyvip-ai/card-matching-game",
+          url: "https://card-matching-game-svelte.netlify.app/",
         },
         {
           id: uuid(),
@@ -402,6 +420,8 @@ export function getStaticProps(): { props: Combined } {
           about: "A hangman game made in svelte",
           tags: ["Svelte", "Game"],
           img: "/about04.png",
+          url: "https://svelte-hangman.netlify.app/",
+          github: "https://github.com/hyvip-ai/hangman_svelte",
         },
         {
           id: uuid(),
@@ -416,6 +436,8 @@ export function getStaticProps(): { props: Combined } {
           about: "Simple Web Application to Search Tv shows and movies",
           tags: ["Angular"],
           img: "/about01.png",
+          github: "https://github.com/hyvip-ai/Movies",
+          url: "",
         },
       ],
       skills: [
