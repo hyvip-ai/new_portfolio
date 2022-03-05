@@ -10,6 +10,14 @@ function TestiCard(props: testiCardProps) {
     <div className={classes.testicard}>
       <div className={classes.data}>{props.testiData.testimonial}</div>
       <div className={classes.person}>
+        <div className={classes.wave}>
+          <svg viewBox="0 0 500 260">
+            <path
+              d="M-1.12,66.61 C327.88,-52.78 268.06,194.89 501.69,109.03 L500.00,260.00 L0.00,260.00 Z"
+              className={classes.card_wave}
+            ></path>
+          </svg>
+        </div>
         <div className={classes.image}>
           <Image
             src={props.testiData.imageURL}
