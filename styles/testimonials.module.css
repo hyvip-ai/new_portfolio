@@ -47,6 +47,7 @@
   height: 130px;
   overflow: hidden;
   z-index: -1;
+  opacity: 0.5;
 }
 .card_wave {
   fill: #00dcff;
