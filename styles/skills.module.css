@@ -32,7 +32,6 @@
 }
 .download_resume_heading_outer {
   position: relative;
-  margin-bottom: 5rem;
 }
 .download_resume_heading {
   position: absolute;
@@ -44,10 +43,10 @@
 
 @media (max-width: 500px) {
   .downloadButton {
-    height: 115px;
+    height: 100px;
     width: 300px;
   }
   .download_resume_heading_outer {
-    margin-bottom: 6rem;
+    margin-bottom: 4rem;
   }
 }
