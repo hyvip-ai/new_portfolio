@@ -20,3 +20,34 @@
   text-align: center;
   font-size: 1.2rem;
 }
+
+.downloadButton {
+  position: relative;
+  height: 172px;
+  width: 500px;
+  cursor: pointer;
+}
+.skillSection {
+  padding-bottom: 5rem;
+}
+.download_resume_heading_outer {
+  position: relative;
+  margin-bottom: 5rem;
+}
+.download_resume_heading {
+  position: absolute;
+  top: 30px;
+  z-index: 10;
+  width: 100%;
+  text-align: center;
+}
+
+@media (max-width: 500px) {
+  .downloadButton {
+    height: 115px;
+    width: 300px;
+  }
+  .download_resume_heading_outer {
+    margin-bottom: 6rem;
+  }
+}

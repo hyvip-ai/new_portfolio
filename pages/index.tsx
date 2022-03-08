@@ -14,6 +14,7 @@ import Skills from "../components/Skills";
 import { v4 as uuid } from "uuid";
 import Footer from "../components/Footer";
 export default function Home(props: Combined) {
+  // TODO: ADD DOWNLOAD RESUME SECTION
   return (
     <>
       <Head>
