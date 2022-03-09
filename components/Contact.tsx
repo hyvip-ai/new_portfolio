@@ -46,17 +46,19 @@ function Contact(props: contactProps) {
             <Player autoplay loop src={props.contactDetails.lottieSrc}></Player>
           </div>
           <div className={classes.right}>
-            <form>
-              <input type="text" placeholder="Name..." />
-              <input type="email" placeholder="Email" />
-              <textarea name="" placeholder="Message..." rows={4}></textarea>
-              <button
-                onClick={(e) => {
-                  e.preventDefault();
-                }}
-              >
-                SEND
-              </button>
+            <form
+              action="https://formsubmit.co/rm2932002@gmail.com"
+              method="POST"
+            >
+              <input type="text" placeholder="Name..." name="Name" required />
+              <input type="email" placeholder="Email" name="Email" required />
+              <textarea
+                name="Message"
+                placeholder="Message..."
+                rows={4}
+                required
+              ></textarea>
+              <button type="submit">SEND</button>
             </form>
           </div>
         </div>
