@@ -14,6 +14,10 @@
   align-items: center;
   margin: 1rem 1rem;
   font-size: 5rem;
+  transition: all 0.3s ease-in-out;
+}
+.link:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .linkedin {
   color: #0077b5;
