@@ -42,7 +42,7 @@ function Works(props: skillProps) {
                 setActive(project);
               }}
             >
-              {project}
+              {project === "Various" ? "All" : project}
             </span>
           );
         })}
