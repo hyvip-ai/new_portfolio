@@ -48,21 +48,23 @@ function Works(props: skillProps) {
         })}
       </div>
       <section className="section">
-        <TransitionGroup className={classes.cards}>
-          {activeProjects.map((project: Projects) => {
-            return (
-              <CSSTransition
-                key={uuid()}
-                in={true}
-                timeout={300}
-                unmountOnExit
-                classNames="work-card"
-              >
-                <WorkCard work={project} />
-              </CSSTransition>
-            );
-          })}
-        </TransitionGroup>
+        <div className={classes.cards}>
+          <TransitionGroup component={null}>
+            {activeProjects.map((project: Projects) => {
+              return (
+                <CSSTransition
+                  key={uuid()}
+                  in={true}
+                  timeout={300}
+                  unmountOnExit
+                  classNames="work-card"
+                >
+                  <WorkCard work={project} active={active} />
+                </CSSTransition>
+              );
+            })}
+          </TransitionGroup>
+        </div>
       </section>
     </>
   );

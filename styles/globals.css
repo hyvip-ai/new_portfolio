@@ -129,3 +129,6 @@ body::-webkit-scrollbar-thumb {
   opacity: 0;
   transition: all 1s;
 }
+.justify-center {
+  justify-content: center;
+}

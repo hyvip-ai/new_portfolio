@@ -305,7 +305,7 @@ export function getStaticProps(): { props: Combined } {
           ],
           about:
             "Just a website to replicate Role Base Authentication system using Angular Auth Guard",
-          tags: ["FullStack", "Angular", "Nodejs", "Various"],
+          tags: ["Angular", "Nodejs", "Various"],
           img: "/about01.png",
           github: "https://github.com/hyvip-ai/angular_role_guard_front",
           url: "",
@@ -325,22 +325,6 @@ export function getStaticProps(): { props: Combined } {
           url: "https://sorting-visualizer-by-rajat.netlify.app/",
           img: "/about02.png",
           github: "https://github.com/hyvip-ai/sorting_algorithm_visualizer",
-        },
-        {
-          id: uuid(),
-          name: "Airbnb Clone",
-          techStack: [
-            {
-              tag: "React",
-              classname:
-                tabVariant[Math.floor(Math.random() * tabVariant.length)],
-            },
-          ],
-          about: "Simple Airbnb Clone Integrated with api and Mapbox",
-          tags: ["React"],
-          url: "https://airbnb-clone-by-rajat.netlify.app/",
-          img: "/about03.png",
-          github: "https://github.com/hyvip-ai/airbnb_clone",
         },
         {
           id: uuid(),
@@ -403,7 +387,7 @@ export function getStaticProps(): { props: Combined } {
             },
           ],
           about: "A simple card matching game made in svelte",
-          tags: ["Svelte", "Game"],
+          tags: ["Game"],
           img: "/about03.png",
           github: "https://github.com/hyvip-ai/card-matching-game",
           url: "https://card-matching-game-svelte.netlify.app/",
@@ -419,26 +403,10 @@ export function getStaticProps(): { props: Combined } {
             },
           ],
           about: "A hangman game made in svelte",
-          tags: ["Svelte", "Game"],
+          tags: ["Game"],
           img: "/about04.png",
           url: "https://svelte-hangman.netlify.app/",
           github: "https://github.com/hyvip-ai/hangman_svelte",
-        },
-        {
-          id: uuid(),
-          name: "Movie Recommendation",
-          techStack: [
-            {
-              tag: "Angular",
-              classname:
-                tabVariant[Math.floor(Math.random() * tabVariant.length)],
-            },
-          ],
-          about: "Simple Web Application to Search Tv shows and movies",
-          tags: ["Angular"],
-          img: "/about01.png",
-          github: "https://github.com/hyvip-ai/Movies",
-          url: "",
         },
       ],
       skills: [

@@ -8,6 +8,7 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 interface workCardProps {
   work: Projects;
+  active: string;
 }
 function WorkCard(props: workCardProps) {
   const urlHandler = () => {
@@ -28,7 +29,9 @@ function WorkCard(props: workCardProps) {
           height={230}
           width={238}
         />
-        <div className={classes.badge}>{props.work.tags[0]}</div>
+        <div className={classes.badge}>
+          {props.active === "Various" ? "All" : props.active}
+        </div>
         <div className={classes.overlay}>
           <button>
             <a href={props.work.github}>
