@@ -111,8 +111,21 @@ body::-webkit-scrollbar-thumb {
 .primary {
   background-color: rgba(44, 96, 250, 0.25);
 }
-.motion {
-  display: flex;
-  margin: 2rem 1rem;
-  cursor: pointer;
+.work-card-enter {
+  opacity: 0;
+  transform: scale(0.6) translateY(250px) !important;
+}
+.work-card-enter-active {
+  transform: scale(1) translateY(0px) !important;
+  opacity: 1;
+  transition: all 1s;
+}
+.work-card-exit {
+  transform: scale(1) translateY(0px) !important;
+  opacity: 1;
+}
+.work-card-exit-active {
+  transform: scale(0.6) translateY(250px) !important;
+  opacity: 0;
+  transition: all 1s;
 }

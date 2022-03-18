@@ -19,7 +19,7 @@ function WorkCard(props: workCardProps) {
     }
   };
   return (
-    <div className={classes.workCard}>
+    <div className={`${classes.workCard}`}>
       <div className={classes.image}>
         <Image
           src={props.work.img}

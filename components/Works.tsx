@@ -1,8 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React, { Fragment, useEffect, useState } from "react";
 import { Projects } from "../types/all";
 import classes from "../styles/works.module.css";
 import WorkCard from "../Layout/WorkCrad";
-import { motion } from "framer-motion";
+import { CSSTransition, TransitionGroup } from "react-transition-group";
+import { v4 as uuid } from "uuid";
 interface skillProps {
   projects: Projects[];
 }
@@ -46,16 +47,22 @@ function Works(props: skillProps) {
           );
         })}
       </div>
-      <section className={`section`}>
-        <div className={classes.cards}>
-          {activeProjects.map((project) => {
+      <section className="section">
+        <TransitionGroup className={classes.cards}>
+          {activeProjects.map((project: Projects) => {
             return (
-              <motion.div key={project.id} layout className="motion">
+              <CSSTransition
+                key={uuid()}
+                in={true}
+                timeout={300}
+                unmountOnExit
+                classNames="work-card"
+              >
                 <WorkCard work={project} />
-              </motion.div>
+              </CSSTransition>
             );
           })}
-        </div>
+        </TransitionGroup>
       </section>
     </>
   );

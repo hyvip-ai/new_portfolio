@@ -1,11 +1,11 @@
 .workCard {
   width: 30rem;
-  height: 100%;
   padding: 1.6rem;
   background-color: white;
   border-radius: 10px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   transition: all 0.3s;
+  margin: 2rem 1rem;
 }
 .workCard:hover {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
@@ -14,7 +14,7 @@
 .cards {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: stretch;
 }
 .image {
