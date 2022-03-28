@@ -8,7 +8,7 @@ interface bannerProps {
 }
 function Banner(props: bannerProps) {
   useEffect(() => {
-    var typed = new Typed(".types", {
+    new Typed(".types", {
       strings: props.bannerData.typing,
       typeSpeed: 100,
       loop: true,
@@ -22,7 +22,7 @@ function Banner(props: bannerProps) {
     <>
       <section className={`section ${classes.banner} pt`}>
         <div className={classes.row}>
-          <div className={classes.col}>
+          <div className={`${classes.col} ${classes.first_col}`}>
             <h1>{props.bannerData.pageIntro}</h1>
             <h3>{props.bannerData.me}</h3>
             <h3>

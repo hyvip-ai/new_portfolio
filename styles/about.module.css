@@ -10,8 +10,12 @@
 
 .para {
   font-size: 1.4rem;
-  text-align: center;
   color: #222f3e;
+  padding: 1rem 1.5rem;
+  text-align: left;
+}
+.heading {
+  text-align: left;
   padding: 1rem 1.5rem;
 }
 

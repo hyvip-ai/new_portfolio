@@ -15,6 +15,9 @@
   justify-content: center;
   align-items: center;
 }
+.banner .row .first_col {
+  align-items: flex-start;
+}
 .image {
   width: 100%;
   height: auto;
@@ -28,10 +31,12 @@
   font-family: "Monoton";
   color: #222f3e;
   font-weight: 400;
+  padding: 0rem 1rem;
 }
 
 .col h3 {
   font-size: 4rem;
+  padding: 0rem 1rem;
   margin-bottom: 1rem;
 }
 

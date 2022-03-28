@@ -9,7 +9,7 @@ function SkillBtn(props: skillProps) {
   return (
     <div>
       <div
-        className={classes.skill_btn}
+        className={`${classes.skill_btn} ${props.skill.name}`}
         style={{ backgroundColor: props.skill.bgColor }}
       >
         <Image
