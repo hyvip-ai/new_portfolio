@@ -1,11 +1,14 @@
 .heading {
-  font-size: 3.7rem;
+  font-size: 3.5rem;
   font-weight: 600;
   text-align: center;
   background: linear-gradient(103.22deg, #ae67fa -13.86%, #f49867 99.55%),
     linear-gradient(0deg, #ffffff, #ffffff);
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
+  text-align: left;
+  padding: 1rem 0rem;
+  padding-left: 1.5rem;
 }
 
 .para {
@@ -13,10 +16,6 @@
   color: #222f3e;
   padding: 1rem 1.5rem;
   text-align: left;
-}
-.heading {
-  text-align: left;
-  padding: 1rem 1.5rem;
 }
 
 @media (max-width: 768px) {
@@ -26,6 +25,12 @@
   }
   .row {
     flex-wrap: wrap;
+  }
+  .para {
+    text-align: center;
+  }
+  .heading {
+    text-align: center;
   }
 }
 

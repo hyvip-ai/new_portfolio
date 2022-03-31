@@ -108,6 +108,9 @@
   .col h3 {
     font-size: 3.5rem;
   }
+  .banner .row .first_col {
+    align-items: center;
+  }
 }
 @media (max-width: 600px) {
   .col h1 {
