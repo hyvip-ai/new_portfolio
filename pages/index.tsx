@@ -95,7 +95,7 @@ export function getStaticProps(): { props: Combined } {
       aboutData: {
         title: "Hello, I'm <Rajat />",
         description:
-          "Hi I am Rajat, a 19 year old Web Developer, living in Kolkata, India. I am pursuing Electronics and Communication Engineering, also I am working for some amazing folks at CodeBuddy.<br/>I love JavaScript because I can relate JavaScript to life as its unpredictable.<br/>Also, <b>I know how to google things</b>",
+          "Hi I am Rajat, a 20 years old Web Developer, living in Kolkata, India. I am pursuing Electronics and Communication Engineering, also I am working for some amazing folks at CodeBuddy.<br/>I love JavaScript because I can relate JavaScript to life as its unpredictable.<br/>Also, <b>I know how to google things</b>",
         lottieData: {
           src: "https://assets1.lottiefiles.com/packages/lf20_HpFqiS.json",
           speed: "1",

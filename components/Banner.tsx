@@ -32,7 +32,7 @@ function Banner(props: bannerProps) {
           <div className={classes.col}>
             <div className={classes.image}>
               <Image
-                src="/Me.jpeg"
+                src="/me_updated.jfif"
                 alt="Rajat Mondal"
                 layout="responsive"
                 height={640}
@@ -50,7 +50,7 @@ function Banner(props: bannerProps) {
       </section>
       <div className={classes.small}>
         <Image
-          src="/Me.jpeg"
+          src="/me_updated.jfif"
           layout="responsive"
           height={640}
           width={640}
