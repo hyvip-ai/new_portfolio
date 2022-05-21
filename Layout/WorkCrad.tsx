@@ -1,11 +1,12 @@
-import React from "react";
-import { Projects } from "../types/all";
-import classes from "../styles/works.module.css";
-import Image from "next/image";
-import Tabs from "../components/Tabs";
-import { faEye } from "@fortawesome/free-solid-svg-icons";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import React from 'react';
+import { Projects } from '../types/all';
+import classes from '../styles/works.module.css';
+import Image from 'next/image';
+import Tabs from '../components/Tabs';
+import { faEye } from '@fortawesome/free-solid-svg-icons';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import BlurImage from '../components/BlurImage';
 interface workCardProps {
   work: Projects;
   active: string;
@@ -22,15 +23,15 @@ function WorkCard(props: workCardProps) {
   return (
     <div className={`${classes.workCard}`}>
       <div className={classes.image}>
-        <Image
+        <BlurImage
           src={props.work.img}
           alt={props.work.name}
-          layout="responsive"
+          layout='responsive'
           height={230}
           width={238}
         />
         <div className={classes.badge}>
-          {props.active === "Various" ? "All" : props.active}
+          {props.active === 'Various' ? 'All' : props.active}
         </div>
         <div className={classes.overlay}>
           <button>

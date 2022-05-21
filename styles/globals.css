@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -12,6 +13,7 @@ html {
   height: 100%;
   font-size: 62.5%;
 }
+
 body {
   height: 100%;
   width: 100%;
@@ -35,12 +37,15 @@ a {
   padding: 0rem 0.5rem;
   padding-bottom: 8rem;
 }
+
 .pt {
   padding-top: 14rem;
 }
+
 .TypeScript {
   padding: 3rem !important;
 }
+
 .section_heading {
   font-size: 5rem;
   font-family: "Montserrat", sans-serif;
@@ -54,6 +59,7 @@ a {
   margin-bottom: 20px;
   padding-top: 8rem;
 }
+
 .animate {
   transform: translateY(100px);
 }
@@ -76,16 +82,19 @@ body::-webkit-scrollbar-thumb {
     width: 540px;
   }
 }
+
 @media (min-width: 768px) {
   .section {
     width: 750px;
   }
 }
+
 @media (min-width: 992px) {
   .section {
     width: 970px;
   }
 }
+
 @media (min-width: 1200px) {
   .section {
     width: 1170px;
@@ -105,33 +114,73 @@ body::-webkit-scrollbar-thumb {
 .warning {
   background-color: rgba(255, 193, 7, 0.25);
 }
+
 .success {
   background-color: rgba(60, 219, 143, 0.25);
 }
+
 .danger {
   background-color: rgba(249, 67, 67, 0.25);
 }
+
 .primary {
   background-color: rgba(44, 96, 250, 0.25);
 }
+
 .work-card-enter {
   opacity: 0;
   transform: scale(0.6) translateY(250px) !important;
 }
+
 .work-card-enter-active {
   transform: scale(1) translateY(0px) !important;
   opacity: 1;
   transition: all 1s;
 }
+
 .work-card-exit {
   transform: scale(1) translateY(0px) !important;
   opacity: 1;
 }
+
 .work-card-exit-active {
   transform: scale(0.6) translateY(250px) !important;
   opacity: 0;
   transition: all 1s;
 }
+
 .justify-center {
   justify-content: center;
+}
+
+.duration-700 {
+  transition-duration: 700ms;
+}
+
+.ease-in-out {
+  transition-timing-function: ease-in-out;
+}
+
+.grayscale-0 {
+  filter: grayscale(0);
+}
+
+.grayscale {
+  filter: grayscale(100%);
+}
+
+.blur-2xl {
+  filter: blur(40px);
+}
+
+.blur-0 {
+  filter: blur(0);
+}
+
+.scale-100 {
+  transform: scale(1);
+}
+
+.scale-110 {
+  transform: scale(1.1);
 }

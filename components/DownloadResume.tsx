@@ -1,6 +1,6 @@
-import Image from 'next/image';
 import React, { useState } from 'react';
 import classes from '../styles/skills.module.css';
+import BlurImage from './BlurImage';
 function DownloadResume() {
   const [showGif, setShowGif] = useState(false);
   return (
@@ -14,7 +14,7 @@ function DownloadResume() {
           }}
         >
           <div className={classes.downloadButton}>
-            <Image
+            <BlurImage
               src='/dwnld.png'
               layout='fill'
               alt='Download resume'
@@ -24,7 +24,7 @@ function DownloadResume() {
         </a>
       ) : (
         <div className={classes.downloadButton}>
-          <Image src='/dwnldGif.gif' layout='fill' alt='Download resume' />
+          <BlurImage src='/dwnldGif.gif' layout='fill' alt='Download resume' />
         </div>
       )}
     </>

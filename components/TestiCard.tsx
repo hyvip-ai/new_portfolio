@@ -1,7 +1,7 @@
-import Image from "next/image";
-import React from "react";
-import classes from "../styles/testimonials.module.css";
-import { Testimonial } from "../types/all";
+import React from 'react';
+import classes from '../styles/testimonials.module.css';
+import { Testimonial } from '../types/all';
+import BlurImage from './BlurImage';
 interface testiCardProps {
   testiData: Testimonial;
 }
@@ -11,22 +11,20 @@ function TestiCard(props: testiCardProps) {
       <div className={classes.data}>{props.testiData.testimonial}</div>
       <div className={classes.person}>
         <div className={classes.wave}>
-          <svg viewBox="0 0 500 260">
+          <svg viewBox='0 0 500 260'>
             <path
-              d="M-1.12,66.61 C327.88,-52.78 268.06,194.89 501.69,109.03 L500.00,260.00 L0.00,260.00 Z"
+              d='M-1.12,66.61 C327.88,-52.78 268.06,194.89 501.69,109.03 L500.00,260.00 L0.00,260.00 Z'
               className={classes.card_wave}
             ></path>
           </svg>
         </div>
         <div className={classes.image}>
-          <Image
+          <BlurImage
             src={props.testiData.imageURL}
             alt={props.testiData.name}
-            layout="responsive"
+            layout='responsive'
             height={400}
             width={400}
-            objectFit="cover"
-            objectPosition="center"
           />
         </div>
         <div className={classes.personDetails}>
