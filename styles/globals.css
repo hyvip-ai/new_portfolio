@@ -109,6 +109,10 @@ body::-webkit-scrollbar-thumb {
 
 .bg_color {
   background-color: #edf2f8;
+  background-image: url("/bgWhite.png");
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
 }
 
 .warning {
@@ -183,4 +187,8 @@ body::-webkit-scrollbar-thumb {
 
 .scale-110 {
   transform: scale(1.1);
+}
+
+.main {
+  overflow: hidden;
 }

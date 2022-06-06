@@ -30,15 +30,20 @@ function Banner(props: bannerProps) {
             </h3>
           </div>
           <div className={classes.col}>
+            <div className={classes.col_wrapper}></div>
             <div className={classes.image}>
-              <BlurImage
-                src='/me_updated.jfif'
-                alt='Rajat Mondal'
-                layout='responsive'
-                height={640}
-                width={640}
-                priority
-              />
+              <div className={classes.border}>
+                <BlurImage
+                  src='/me_updated.jfif'
+                  alt='Rajat Mondal'
+                  layout='responsive'
+                  height={640}
+                  width={640}
+                  priority
+                  className={classes.img}
+                />
+                <span className={classes.border_layout}></span>
+              </div>
               <div className={classes.data}>
                 <a href='mailto:rm2932002@gmail.com'>
                   {props.bannerData.imageOverlayText}

@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Monoton&display=swap");
 
+.banner {
+  height: 100vh;
+}
+
 .banner .row {
   display: flex;
   justify-content: space-between;
@@ -14,18 +18,57 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
+
 }
+
 .banner .row .first_col {
   align-items: flex-start;
 }
+
+
 .image {
-  width: 100%;
+  height: 315px;
+  width: 315px;
   height: auto;
   cursor: pointer;
   position: relative;
-  border-radius: 10px;
-  overflow: hidden;
 }
+
+.border {
+  margin: auto;
+  width: 100%;
+  position: relative;
+}
+
+.col_wrapper {
+  background-image: url("/Avatar.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 515px;
+  height: 315px;
+  position: absolute;
+}
+
+.border_layout {
+  position: absolute;
+  display: block;
+  height: 100%;
+  width: 100%;
+  border: 2px solid #161616;
+  top: 5%;
+  left: 5%;
+  z-index: -1;
+  border-radius: 10px;
+
+}
+
+.img {
+  border-radius: 10px;
+}
+
+
 .col h1 {
   font-size: 8rem;
   font-family: "Monoton";
@@ -43,11 +86,13 @@
 .col h3:first-child {
   color: #222f3e;
 }
+
 .col h3:last-child {
   font-size: 2.5rem;
   background: linear-gradient(103.22deg, #ae67fa -13.86%, #f49867 99.55%),
     linear-gradient(0deg, #ffffff, #ffffff);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   padding: 0px 10px;
   margin-top: 6px;
@@ -64,13 +109,16 @@
   align-items: center;
   background-color: rgba(0, 0, 0, 0.6);
   color: white;
-  font-size: 2.5rem;
+  font-size: 2rem;
   opacity: 0;
   transition: all 0.5s;
+  border-radius: 10px;
 }
+
 .col .image:hover .data {
   opacity: 1;
 }
+
 .small {
   height: 25rem;
   width: 25rem;
@@ -80,49 +128,63 @@
   margin-bottom: 8rem;
   display: none;
 }
+
 @media (max-width: 1200px) {
   .col h1 {
     font-size: 5.5rem;
   }
+
   .col h3 {
     font-size: 2.5rem;
   }
 }
+
 @media (max-width: 768px) {
   .small {
     display: block;
   }
+
   .banner {
     padding-bottom: 2rem;
+    height: auto;
   }
+
   .banner .row .col {
     width: 100%;
     margin: 20px auto;
   }
+
   .banner .row .col:last-child {
     display: none;
   }
+
   .col h1 {
     font-size: 7rem;
   }
+
   .col h3 {
     font-size: 3.5rem;
   }
+
   .banner .row .first_col {
     align-items: center;
   }
 }
+
 @media (max-width: 600px) {
   .col h1 {
     font-size: 4.5rem;
   }
+
   .col h3 {
     font-size: 2.8rem;
   }
+
   .col h3:last-child {
     font-size: 2rem;
   }
 }
+
 @media (max-width: 400px) {
   .col .image .data {
     font-size: 1.5rem;

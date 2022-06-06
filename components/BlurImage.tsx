@@ -12,6 +12,7 @@ interface BlurImageProps {
   alt: string;
   layout: 'fixed' | 'fill' | 'intrinsic' | 'responsive';
   priority?: boolean;
+  className?: string;
 }
 
 function BlurImage(props: BlurImageProps) {
@@ -26,6 +27,7 @@ function BlurImage(props: BlurImageProps) {
       layout={props.layout}
       objectFit='cover'
       className={cn(
+        props.className,
         'duration-700 ease-in-out',
         isLoading
           ? 'scale-110 blur-2xl grayscale'

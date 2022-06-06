@@ -17,7 +17,7 @@ export default function Home(props: Combined) {
   return (
     <>
       <Head>
-        <title>Rajat Mondal</title>
+        <title>Rajat Mondal | Front-End Developer</title>
         <meta property='og:title' content='Rajat Mondal Portfolio' />
         <meta
           property='og:image'
@@ -32,7 +32,7 @@ export default function Home(props: Combined) {
       <Intro />
       <NavBar />
       <Progress />
-      <main>
+      <main className='main'>
         <div id='home' />
         <Banner bannerData={props.bannerData} />
         <main className='bg_color'>
