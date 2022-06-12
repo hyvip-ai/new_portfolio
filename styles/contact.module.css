@@ -14,6 +14,7 @@
 .left {
   width: 45%;
 }
+
 .right input,
 .right textarea {
   display: block;
@@ -25,35 +26,81 @@
   border: none;
   background-color: #edf3ff;
 }
+
 .right textarea {
   resize: vertical;
 }
+
 .right button {
   margin: 2rem 0rem;
 }
+
 .right button {
   display: block;
   width: 100%;
   border-radius: 5rem;
   border: none;
-  padding: 0.8rem 0rem;
   font-size: 1.5rem;
   color: white;
-  background-color: #2c3e50;
+  background-color: rgba(44, 62, 80);
   cursor: pointer;
+  padding: 0.8rem 0rem;
+  position: relative;
+  height: 40px;
 }
+
+.right button .text {
+  position: absolute;
+  padding: 0.8rem 0rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  font-weight: bold;
+}
+
+
+.right button span {
+  content: "";
+  display: block;
+  transform: scaleY(0);
+  transition: transform 0.3s;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 5rem;
+  background-color: #edf3ff;
+  top: 0;
+  left: 0;
+  transform-origin: top center;
+  z-index: 0;
+}
+
+.right button:hover {
+  color: #000;
+}
+
+
+.right button:hover span {
+  transform: scaleY(1);
+  transform-origin: bottom center;
+}
+
 .right button:active {
   transform: scale(0.95);
 }
+
 @media (max-width: 768px) {
   .contactCard {
     display: block;
   }
+
   .right,
   .left {
     width: 100%;
   }
 }
+
 .email,
 .phone {
   background-color: rgb(242, 229, 231);
@@ -64,12 +111,14 @@
   margin: 1rem auto;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
+
 .image {
   height: 64px;
   width: 64px;
   margin-right: 2rem;
   flex-shrink: 0;
 }
+
 .email h6,
 .phone h6 {
   font-size: 1.3rem;
@@ -85,10 +134,12 @@
 .phone {
   background-color: white;
 }
+
 .contact a {
   display: inline-block;
   width: 45%;
 }
+
 @media (max-width: 768px) {
   .contact a {
     width: 100%;

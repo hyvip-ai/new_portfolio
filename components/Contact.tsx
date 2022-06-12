@@ -58,7 +58,10 @@ function Contact(props: contactProps) {
                 rows={4}
                 required
               ></textarea>
-              <button type='submit'>SEND</button>
+              <button type='submit'>
+                <div className={classes.text}>SEND</div>
+                <span></span>
+              </button>
             </form>
           </div>
         </div>
