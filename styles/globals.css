@@ -109,7 +109,7 @@ body::-webkit-scrollbar-thumb {
 
 .bg_color {
   background-color: #edf2f8;
-  background-image: url("/bgWhite.png");
+  background-image: url("/bgWhite.webp");
   background-position: center;
   background-repeat: repeat;
   background-size: cover;
