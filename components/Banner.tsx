@@ -23,11 +23,11 @@ function Banner(props: bannerProps) {
       <section className={`section ${classes.banner} pt`}>
         <div className={classes.row}>
           <div className={`${classes.col} ${classes.first_col}`}>
-            <h1>{props.bannerData.pageIntro}</h1>
-            <h3>{props.bannerData.me}</h3>
-            <h3>
+            <h1 className={`${classes.h1}`}>{props.bannerData.pageIntro}</h1>
+            <h1 className={`${classes.h3}`}>{props.bannerData.me}</h1>
+            <h1 className={`${classes.h3}`}>
               <span className='types'></span>
-            </h3>
+            </h1>
           </div>
           <div className={classes.col}>
             <div className={classes.col_wrapper}></div>

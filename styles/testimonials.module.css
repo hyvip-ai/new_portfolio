@@ -59,7 +59,7 @@
   overflow: hidden;
   flex-shrink: 0;
 }
-.testicard .person h3 {
+.testicard .person .h3 {
   font-size: 1.6rem;
 }
 .testicard .person p {
@@ -82,7 +82,7 @@
   .testicard .person p {
     font-size: 1rem;
   }
-  .testicard .person h3 {
+  .testicard .person .h3 {
     font-size: 1.2rem;
   }
   .testicard .data {

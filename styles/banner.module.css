@@ -69,7 +69,7 @@
 }
 
 
-.col h1 {
+.col .h1 {
   font-size: 8rem;
   font-family: "Monoton";
   color: #222f3e;
@@ -77,17 +77,17 @@
   padding: 0rem 1rem;
 }
 
-.col h3 {
+.col .h3 {
   font-size: 4rem;
   padding: 0rem 1rem;
   margin-bottom: 1rem;
 }
 
-.col h3:first-child {
+.col .h3:first-child {
   color: #222f3e;
 }
 
-.col h3:last-child {
+.col .h3:last-child {
   font-size: 2.5rem;
   background: linear-gradient(103.22deg, #ae67fa -13.86%, #f49867 99.55%),
     linear-gradient(0deg, #ffffff, #ffffff);
@@ -130,11 +130,11 @@
 }
 
 @media (max-width: 1200px) {
-  .col h1 {
+  .col .h1 {
     font-size: 5.5rem;
   }
 
-  .col h3 {
+  .col .h3 {
     font-size: 2.5rem;
   }
 }
@@ -158,11 +158,11 @@
     display: none;
   }
 
-  .col h1 {
+  .col .h1 {
     font-size: 7rem;
   }
 
-  .col h3 {
+  .col .h3 {
     font-size: 3.5rem;
   }
 
@@ -172,15 +172,15 @@
 }
 
 @media (max-width: 600px) {
-  .col h1 {
+  .col .h1 {
     font-size: 4.5rem;
   }
 
-  .col h3 {
+  .col .h3 {
     font-size: 2.8rem;
   }
 
-  .col h3:last-child {
+  .col .h3:last-child {
     font-size: 2rem;
   }
 }

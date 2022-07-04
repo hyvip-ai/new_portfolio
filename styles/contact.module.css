@@ -119,8 +119,8 @@
   flex-shrink: 0;
 }
 
-.email h6,
-.phone h6 {
+.email h1,
+.phone h1 {
   font-size: 1.3rem;
 }
 

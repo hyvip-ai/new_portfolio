@@ -19,8 +19,8 @@ function WorkExperience(props: workProps) {
                     <p className={classes.timeline_event_thumbnail}>
                       {work.timeLine}
                     </p>
-                    <h3>{work.title}</h3>
-                    <h4>{work.name}</h4>
+                    <h1 className={`${classes.h3}`}>{work.title}</h1>
+                    <h1 className={`${classes.h4}`}>{work.name}</h1>
                     <p>{work.works}</p>
                   </div>
                 </li>

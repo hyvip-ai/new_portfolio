@@ -33,11 +33,11 @@
   left: 4em;
   width: 80%;
 }
-.timeline_event_copy h3 {
+.timeline_event_copy .h3 {
   font-size: 2em;
   color: #3d4351;
 }
-.timeline_event_copy h4 {
+.timeline_event_copy .h4 {
   font-size: 1.4em;
   margin-bottom: 1.2em;
   color: #2c3e50;

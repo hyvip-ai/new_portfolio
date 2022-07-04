@@ -21,7 +21,11 @@ function Qualification(props: qualProps) {
                       <div className={classes.timeline_info}></div>
                       <div className={classes.timeline_marker}></div>
                       <div className={classes.timeline_content}>
-                        <h2 className={classes.timeline_title}>{qual.name}</h2>
+                        <h1
+                          className={`${classes.timeline_title} ${classes.h2}`}
+                        >
+                          {qual.name}
+                        </h1>
                       </div>
                     </li>
                     <li className={classes.timeline_item}>
@@ -30,7 +34,11 @@ function Qualification(props: qualProps) {
                       </div>
                       <div className={classes.timeline_marker}></div>
                       <div className={classes.timeline_content}>
-                        <h3 className={classes.timeline_title}>{qual.board}</h3>
+                        <h1
+                          className={`${classes.timeline_title} ${classes.h3}`}
+                        >
+                          {qual.board}
+                        </h1>
                         <p>{qual.place}</p>
                         <p>
                           {qual.gradeUnit}&nbsp;:&nbsp;<b>{qual.grade}</b>

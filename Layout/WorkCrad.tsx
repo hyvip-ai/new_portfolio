@@ -34,18 +34,18 @@ function WorkCard(props: workCardProps) {
           {props.active === 'Various' ? 'All' : props.active}
         </div>
         <div className={classes.overlay}>
-          <button>
+          <button aria-label="github action">
             <a href={props.work.github}>
               <FontAwesomeIcon icon={faGithub} />
             </a>
           </button>
-          <button onClick={urlHandler}>
+          <button onClick={urlHandler} aria-label="view action">
             <FontAwesomeIcon icon={faEye} />
           </button>
         </div>
       </div>
       <div className={classes.data}>
-        <h3>{props.work.name}</h3>
+        <h1>{props.work.name}</h1>
         <div className={classes.techStack}>
           {props.work.techStack.map((tech) => {
             return (

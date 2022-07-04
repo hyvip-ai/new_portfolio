@@ -28,7 +28,7 @@ function TestiCard(props: testiCardProps) {
           />
         </div>
         <div className={classes.personDetails}>
-          <h3>{props.testiData.name}</h3>
+          <h1 className={classes.h3}>{props.testiData.name}</h1>
           <p>{props.testiData.position}</p>
         </div>
       </div>

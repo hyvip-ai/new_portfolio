@@ -17,8 +17,8 @@
   width: 100%;
 }
 .row h1,
-.row h2,
-.row h3,
+.row .h2,
+.row .h3,
 .row h4,
 .row h5,
 .row h6 {
@@ -26,21 +26,21 @@
   margin-top: 0;
 }
 .timeline h1,
-.timeline h2,
-.timeline h3,
+.timeline .h2,
+.timeline .h3,
 .timeline h4,
 .timeline h5,
 .timeline h6 {
   line-height: inherit;
 }
-.timeline h3 {
+.timeline .h3 {
   font-size: 2.4rem;
   padding: 0.5rem;
 }
 .timeline span {
   font-size: 1.2rem;
 }
-.timeline h2 {
+.timeline .h2 {
   font-size: 3rem;
 }
 .timeline p {
@@ -234,14 +234,14 @@
 }
 
 @media (max-width: 550px) {
-  .timeline h3 {
+  .timeline .h3 {
     font-size: 2rem;
     padding: 0.5rem;
   }
   .timeline span {
     font-size: 1rem;
   }
-  .timeline h2 {
+  .timeline .h2 {
     font-size: 2rem;
   }
   .timeline p {

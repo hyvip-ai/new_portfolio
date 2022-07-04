@@ -22,7 +22,7 @@ function Contact(props: contactProps) {
                 width={64}
               />
             </div>
-            <h6>rm2932002@gmail.com</h6>
+            <h1>rm2932002@gmail.com</h1>
           </div>
         </a>
         <a href='tel:6289703125'>
@@ -36,7 +36,7 @@ function Contact(props: contactProps) {
                 width={64}
               />
             </div>
-            <h6>+916289703125</h6>
+            <h1>+916289703125</h1>
           </div>
         </a>
       </section>
@@ -58,7 +58,7 @@ function Contact(props: contactProps) {
                 rows={4}
                 required
               ></textarea>
-              <button type='submit'>
+              <button type='submit' aria-label="send mail">
                 <div className={classes.text}>SEND</div>
                 <span></span>
               </button>
