@@ -31,7 +31,7 @@
   height: 315px;
   width: 315px;
   height: auto;
-  cursor: pointer;
+  /* cursor: pointer; */
   position: relative;
 }
 
@@ -113,6 +113,10 @@
   opacity: 0;
   transition: all 0.5s;
   border-radius: 10px;
+}
+
+.col .image .data a {
+  cursor: pointer;
 }
 
 .col .image:hover .data {
