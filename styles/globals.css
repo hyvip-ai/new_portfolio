@@ -297,7 +297,7 @@ body::-webkit-scrollbar-thumb {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
+  position: fixed;
   z-index: 999999999999;
   width: 100%;
 }
