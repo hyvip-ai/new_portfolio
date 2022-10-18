@@ -13,7 +13,9 @@ import Progress from '../components/Progress';
 import Skills from '../components/Skills';
 import { v4 as uuid } from 'uuid';
 import Footer from '../components/Footer';
+import { useState } from 'react';
 export default function Home(props: Combined) {
+  const [introCompleted, setIntroCompleted] = useState(false);
   return (
     <>
       <Head>
@@ -21,7 +23,7 @@ export default function Home(props: Combined) {
         <meta property='og:title' content='Rajat Mondal Portfolio' />
         <meta
           property='og:image'
-          content='https://avatars.githubusercontent.com/u/74717766?v=4?s=400'
+          content='https://avatars.githubusercontent.com/u/74717766?s=400&u=0e69bf73901ed277dcdc0aa5821db8e879b48baf&v=4'
         />
         <meta
           property='og:description'
@@ -33,7 +35,7 @@ export default function Home(props: Combined) {
         ></meta>
         <link rel='shortcut icon' href='/letter-r.png' type='image/x-icon' />
       </Head>
-      <Intro />
+      {!introCompleted ? <Intro setIntroCompleted={setIntroCompleted} /> : null}
       <NavBar />
       <Progress />
       <main className='main'>
@@ -394,6 +396,33 @@ export function getStaticProps(): { props: Combined } {
           img: '/about04.png',
           url: 'https://svelte-hangman.netlify.app/',
           github: 'https://github.com/hyvip-ai/hangman_svelte',
+        },
+        {
+          id: uuid(),
+          tags: ['Drawing'],
+          url: 'https://rajatmondalportfolio.netlify.app/assets/d2.webp',
+        },
+
+        {
+          id: uuid(),
+          tags: ['Drawing'],
+          url: 'https://rajatmondalportfolio.netlify.app/assets/d4.webp',
+        },
+        {
+          id: uuid(),
+          tags: ['Drawing'],
+          url: 'https://rajatmondalportfolio.netlify.app/assets/d5.webp',
+        },
+        {
+          id: uuid(),
+          tags: ['Drawing'],
+          url: 'https://rajatmondalportfolio.netlify.app/assets/d6.webp',
+        },
+
+        {
+          id: uuid(),
+          tags: ['Drawing'],
+          url: 'https://rajatmondalportfolio.netlify.app/assets/d8.webp',
         },
       ],
       skills: [

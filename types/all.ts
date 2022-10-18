@@ -54,13 +54,13 @@ export interface Social {
   npm: string;
 }
 export interface Projects {
-  name: string;
-  techStack: Tech[];
-  about: string;
+  name?: string;
+  techStack?: Tech[];
+  about?: string;
   tags: string[];
   url: string;
-  github: string;
-  img: string;
+  github?: string;
+  img?: string;
   id: string;
 }
 export interface Tech {

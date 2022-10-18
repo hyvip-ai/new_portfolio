@@ -1,7 +1,6 @@
 import React from 'react';
 import { Projects } from '../types/all';
 import classes from '../styles/works.module.css';
-import Image from 'next/image';
 import Tabs from '../components/Tabs';
 import { faEye } from '@fortawesome/free-solid-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
@@ -34,12 +33,12 @@ function WorkCard(props: workCardProps) {
           {props.active === 'Various' ? 'All' : props.active}
         </div>
         <div className={classes.overlay}>
-          <button aria-label="github action">
+          <button aria-label='github action'>
             <a href={props.work.github}>
               <FontAwesomeIcon icon={faGithub} />
             </a>
           </button>
-          <button onClick={urlHandler} aria-label="view action">
+          <button onClick={urlHandler} aria-label='view action'>
             <FontAwesomeIcon icon={faEye} />
           </button>
         </div>

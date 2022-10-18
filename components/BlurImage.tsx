@@ -13,6 +13,7 @@ interface BlurImageProps {
   layout: 'fixed' | 'fill' | 'intrinsic' | 'responsive';
   priority?: boolean;
   className?: string;
+  objectFit?: 'cover' | 'contain';
 }
 
 function BlurImage(props: BlurImageProps) {
@@ -25,7 +26,7 @@ function BlurImage(props: BlurImageProps) {
       width={props.width}
       priority={props.priority}
       layout={props.layout}
-      objectFit='cover'
+      objectFit={props.objectFit || 'cover'}
       className={cn(
         props.className,
         'duration-700 ease-in-out',
