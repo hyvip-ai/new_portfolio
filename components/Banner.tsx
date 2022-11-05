@@ -1,11 +1,14 @@
-import React, { useEffect } from 'react';
+/* eslint-disable @next/next/no-img-element */
+import React, { useCallback, useEffect } from 'react';
 import { Banner } from '../types/all';
 import classes from '../styles/banner.module.css';
 import Typed from 'typed.js';
 import BlurImage from './BlurImage';
+import Image from 'next/image';
 interface bannerProps {
   bannerData: Banner;
 }
+
 function Banner(props: bannerProps) {
   useEffect(() => {
     new Typed('.types', {
@@ -18,6 +21,43 @@ function Banner(props: bannerProps) {
       backSpeed: 100,
     });
   }, [props.bannerData.typing]);
+
+  const angle = useCallback((cx, cy, ex, ey) => {
+    const dy = ey - cy;
+    const dx = ex - cx;
+    const rad = Math.atan2(dy, dx);
+    const angle = (rad * 180) / Math.PI;
+    return angle;
+  }, []);
+
+  const rotateFunction = useCallback(
+    (e) => {
+      const mouseX = e.clientX;
+      const mouseY = e.clientY;
+      const imageContainerArray = document.getElementsByClassName('image');
+      let imageContainer = null;
+      if (window.innerWidth <= 768) {
+        imageContainer = imageContainerArray[1];
+      } else {
+        imageContainer = imageContainerArray[0];
+      }
+      const rect = imageContainer.getBoundingClientRect();
+      const anchorX = rect.left + rect.width / 2;
+      const anchorY = rect.top + rect.height / 2;
+      const angleCss = angle(mouseX, mouseY, anchorX, anchorY) - 100;
+      document.querySelectorAll('.eye').forEach((eye) => {
+        (eye as HTMLElement).style.transform = `rotate(${angleCss}deg)`;
+      });
+    },
+    [angle]
+  );
+
+  useEffect(() => {
+    document.addEventListener('mousemove', rotateFunction);
+    return () => {
+      document.removeEventListener('mousemove', rotateFunction);
+    };
+  }, [rotateFunction]);
   return (
     <>
       <section className={`section ${classes.banner} pt`}>
@@ -30,37 +70,45 @@ function Banner(props: bannerProps) {
             </h1>
           </div>
           <div className={classes.col}>
-            <div className={classes.col_wrapper}></div>
-            <div className={classes.image}>
-              <div className={classes.border}>
-                <BlurImage
-                  src='/me_updated.jfif'
-                  alt='Rajat Mondal'
-                  layout='responsive'
-                  height={640}
-                  width={640}
-                  priority
-                  className={classes.img}
-                />
-                <span className={classes.border_layout}></span>
-              </div>
-              <div className={classes.data}>
-                <a href='mailto:rm2932002@gmail.com'>
-                  {props.bannerData.imageOverlayText}
-                </a>
+            <div className={`${classes.image} image`}>
+              <BlurImage
+                src='/me_avatar_without_eyes.png'
+                alt='Rajat Mondal'
+                layout='fill'
+                objectFit='contain'
+                priority
+              />
+              <div className={classes.eyes}>
+                <div
+                  className={`eye ${classes.eye}`}
+                  style={{ transform: 'rotate(0deg)' }}
+                ></div>
+                <div
+                  className={`eye ${classes.eye}`}
+                  style={{ transform: 'rotate(0deg)' }}
+                ></div>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <div className={classes.small}>
+      <div className={`${classes.small} image`}>
         <BlurImage
-          src='/me_updated.jfif'
-          layout='responsive'
-          height={640}
-          width={640}
+          src='/me_avatar_without_eyes.png'
+          layout='fill'
           alt='Rajat Mondal'
+          objectFit='contain'
         />
+        <div className={classes.eyes}>
+          <div
+            className={`eye ${classes.eye}`}
+            style={{ transform: 'rotate(0deg)' }}
+          ></div>
+          <div
+            className={`eye ${classes.eye}`}
+            style={{ transform: 'rotate(0deg)' }}
+          ></div>
+        </div>
       </div>
     </>
   );

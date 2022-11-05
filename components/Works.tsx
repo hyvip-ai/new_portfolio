@@ -27,7 +27,6 @@ function Works(props: skillProps) {
   useEffect(() => {
     localStorage.setItem('active', active);
     let newProjects = props.projects.filter((project) => {
-      console.log(active);
       return project.tags.includes(active);
     });
     setActiveProjects(newProjects);

@@ -22,47 +22,15 @@
 
 }
 
+.banner .row .col:nth-child(2) {
+  width: 55%;
+  margin-top: 8rem;
+}
+
 .banner .row .first_col {
   align-items: flex-start;
 }
 
-
-.image {
-  height: 315px;
-  width: 315px;
-  height: auto;
-  /* cursor: pointer; */
-  position: relative;
-}
-
-.border {
-  margin: auto;
-  width: 100%;
-  position: relative;
-}
-
-.col_wrapper {
-  background-image: url("/Avatar.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 515px;
-  height: 315px;
-  position: absolute;
-}
-
-.border_layout {
-  position: absolute;
-  display: block;
-  height: 100%;
-  width: 100%;
-  border: 2px solid #161616;
-  top: 5%;
-  left: 5%;
-  z-index: -1;
-  border-radius: 10px;
-
-}
 
 .img {
   border-radius: 10px;
@@ -98,39 +66,60 @@
   margin-top: 6px;
 }
 
-.col .image .data {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
+.image {
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgba(0, 0, 0, 0.6);
-  color: white;
-  font-size: 2rem;
-  opacity: 0;
-  transition: all 0.5s;
-  border-radius: 10px;
+  position: relative;
+  height: 650px;
 }
 
-.col .image .data a {
-  cursor: pointer;
-}
 
-.col .image:hover .data {
-  opacity: 1;
-}
 
 .small {
-  height: 25rem;
-  width: 25rem;
-  border-radius: 50%;
+  height: 650px;
+  width: 650px;
   overflow: hidden;
   margin: 0px auto;
-  margin-bottom: 8rem;
+  margin-bottom: -2rem;
   display: none;
+  margin-top: -5rem;
+  position: relative;
+}
+
+.eyes {
+  position: relative;
+  height: 100%;
+}
+
+
+.eye:nth-child(1) {
+  position: absolute;
+  top: 37.8%;
+  left: 43.8%;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+}
+
+.eye::after {
+  content: '';
+  display: block;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  background: url("/eye.svg");
+  background-repeat: no-repeat;
+  background-position: top;
+
+}
+
+.eye:nth-child(2) {
+  position: absolute;
+  top: 37.8%;
+  left: 54%;
+  transform: translate(-50%, -50%);
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
 }
 
 @media (max-width: 1200px) {
@@ -141,6 +130,51 @@
   .col .h3 {
     font-size: 2.5rem;
   }
+
+  .eye:nth-child(1) {
+    position: absolute;
+    top: 40%;
+    left: 43.8%;
+    transform: translate(-50%, -50%);
+    height: 22px;
+    width: 22px;
+  }
+
+  .eye:nth-child(2) {
+    position: absolute;
+    top: 40%;
+    left: 54%;
+    transform: translate(-50%, -50%);
+    height: 22px;
+    width: 22px;
+  }
+
+}
+
+@media (max-width: 992px) {
+
+  .eye::after {
+    background-image: url("/small_eye.svg");
+  }
+
+  .eye:nth-child(1) {
+    position: absolute;
+    top: 42%;
+    left: 43.5%;
+    transform: translate(-50%, -50%);
+    height: 18px;
+    width: 18px;
+  }
+
+  .eye:nth-child(2) {
+    position: absolute;
+    top: 42%;
+    left: 54%;
+    transform: translate(-50%, -50%);
+    height: 18px;
+    width: 18px;
+  }
+
 }
 
 @media (max-width: 768px) {
@@ -173,6 +207,54 @@
   .banner .row .first_col {
     align-items: center;
   }
+
+  .eye::after {
+    background-image: url("/eye.svg");
+  }
+
+  .eye:nth-child(1) {
+    position: absolute;
+    top: 37.5%;
+    left: 44%;
+    transform: translate(-50%, -50%);
+    height: 25px;
+    width: 25px;
+  }
+
+  .eye:nth-child(2) {
+    position: absolute;
+    top: 37.5%;
+    left: 54%;
+    transform: translate(-50%, -50%);
+    height: 25px;
+    width: 25px;
+  }
+}
+
+@media(max-width:650px) {
+
+  .small {
+    width: 500px;
+    height: 500px;
+  }
+
+  .eye:nth-child(1) {
+    position: absolute;
+    top: 37.8%;
+    left: 44.2%;
+    transform: translate(-50%, -50%);
+    height: 18px;
+    width: 18px;
+  }
+
+  .eye:nth-child(2) {
+    position: absolute;
+    top: 37.8%;
+    left: 54%;
+    transform: translate(-50%, -50%);
+    height: 18px;
+    width: 18px;
+  }
 }
 
 @media (max-width: 600px) {
@@ -189,8 +271,38 @@
   }
 }
 
+@media(max-width: 500px) {
+  .eye::after {
+    background-image: url("/small_eye.svg");
+  }
+
+  .small {
+    height: 320px;
+    width: 320px;
+  }
+
+  .eye:nth-child(1) {
+    position: absolute;
+    top: 37.5%;
+    left: 44%;
+    transform: translate(-50%, -50%);
+    height: 13px;
+    width: 13px;
+  }
+
+  .eye:nth-child(2) {
+    position: absolute;
+    top: 37.5%;
+    left: 54%;
+    transform: translate(-50%, -50%);
+    height: 13px;
+    width: 13px;
+  }
+}
+
 @media (max-width: 400px) {
   .col .image .data {
     font-size: 1.5rem;
   }
+
 }
