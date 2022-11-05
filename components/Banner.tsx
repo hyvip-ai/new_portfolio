@@ -32,13 +32,11 @@ function Banner(props: bannerProps) {
           <div className={classes.col}>
             <div className={classes.image}>
               <BlurImage
-                src='/me_avatar_website.svg'
+                src='/me_avatar_without_eyes.png'
                 alt='Rajat Mondal'
-                layout='fixed'
-                height={700}
-                width={700}
+                layout='fill'
+                objectFit='contain'
                 priority
-                className={classes.img}
               />
             </div>
           </div>
@@ -46,7 +44,7 @@ function Banner(props: bannerProps) {
       </section>
       <div className={classes.small}>
         <BlurImage
-          src='/me_avatar_website.svg'
+          src='/me_avatar_without_eyes.png'
           layout='fill'
           alt='Rajat Mondal'
           objectFit='contain'

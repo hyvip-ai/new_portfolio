@@ -66,30 +66,13 @@
   margin-top: 6px;
 }
 
-.col .image .data {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
+.image {
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgba(0, 0, 0, 0.6);
-  color: white;
-  font-size: 2rem;
-  opacity: 0;
-  transition: all 0.5s;
-  border-radius: 10px;
+  position: relative;
+  height: 650px;
 }
 
-.col .image .data a {
-  cursor: pointer;
-}
 
-.col .image:hover .data {
-  opacity: 1;
-}
 
 .small {
   height: 650px;
@@ -112,7 +95,7 @@
   }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 768px) {
   .small {
     display: block;
   }

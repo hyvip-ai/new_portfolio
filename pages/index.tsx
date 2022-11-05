@@ -23,7 +23,7 @@ export default function Home(props: Combined) {
         <meta property='og:title' content='Rajat Mondal Portfolio' />
         <meta
           property='og:image'
-          content='https://avatars.githubusercontent.com/u/74717766?s=400&u=0e69bf73901ed277dcdc0aa5821db8e879b48baf&v=4'
+          content='https://i.ibb.co/1sBdvfm/me-avatar.png'
         />
         <meta
           property='og:description'
