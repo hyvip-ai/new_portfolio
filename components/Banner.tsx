@@ -30,36 +30,26 @@ function Banner(props: bannerProps) {
             </h1>
           </div>
           <div className={classes.col}>
-            <div className={classes.col_wrapper}></div>
             <div className={classes.image}>
-              <div className={classes.border}>
-                <BlurImage
-                  src='/me_updated.jfif'
-                  alt='Rajat Mondal'
-                  layout='responsive'
-                  height={640}
-                  width={640}
-                  priority
-                  className={classes.img}
-                />
-                <span className={classes.border_layout}></span>
-              </div>
-              <div className={classes.data}>
-                <a href='mailto:rm2932002@gmail.com'>
-                  {props.bannerData.imageOverlayText}
-                </a>
-              </div>
+              <BlurImage
+                src='/me_avatar_website.svg'
+                alt='Rajat Mondal'
+                layout='fixed'
+                height={700}
+                width={700}
+                priority
+                className={classes.img}
+              />
             </div>
           </div>
         </div>
       </section>
       <div className={classes.small}>
         <BlurImage
-          src='/me_updated.jfif'
-          layout='responsive'
-          height={640}
-          width={640}
+          src='/me_avatar_website.svg'
+          layout='fill'
           alt='Rajat Mondal'
+          objectFit='contain'
         />
       </div>
     </>
