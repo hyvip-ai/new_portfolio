@@ -85,6 +85,25 @@
   position: relative;
 }
 
+.eyes {
+  position: relative;
+  height: 100%;
+}
+
+.eye:nth-child(1) {
+  position: absolute;
+  top: 39.5%;
+  left: 46%;
+  transform: translate(-50%, -50%);
+}
+
+.eye:nth-child(2) {
+  position: absolute;
+  top: 39.5%;
+  left: 56%;
+  transform: translate(-50%, -50%);
+}
+
 @media (max-width: 1200px) {
   .col .h1 {
     font-size: 5.5rem;
@@ -93,6 +112,43 @@
   .col .h3 {
     font-size: 2.5rem;
   }
+
+  .eye:nth-child(1) {
+    position: absolute;
+    top: 41.5%;
+    left: 46%;
+    transform: translate(-50%, -50%);
+    height: 15px;
+  }
+
+  .eye:nth-child(2) {
+    position: absolute;
+    top: 41.5%;
+    left: 56%;
+    transform: translate(-50%, -50%);
+    height: 15px;
+  }
+
+}
+
+@media (max-width: 992px) {
+
+  .eye:nth-child(1) {
+    position: absolute;
+    top: 43.2%;
+    left: 46%;
+    transform: translate(-50%, -50%);
+    height: 12px;
+  }
+
+  .eye:nth-child(2) {
+    position: absolute;
+    top: 43.2%;
+    left: 56%;
+    transform: translate(-50%, -50%);
+    height: 12px;
+  }
+
 }
 
 @media (max-width: 768px) {
@@ -125,12 +181,45 @@
   .banner .row .first_col {
     align-items: center;
   }
+
+  .eye:nth-child(1) {
+    position: absolute;
+    top: 39.2%;
+    left: 46%;
+    transform: translate(-50%, -50%);
+    height: 20px;
+  }
+
+  .eye:nth-child(2) {
+    position: absolute;
+    top: 39.2%;
+    left: 55.7%;
+    transform: translate(-50%, -50%);
+    height: 20px;
+  }
 }
 
 @media(max-width:650px) {
+
   .small {
     width: 100%;
-    height: 450px;
+    height: 500px;
+  }
+
+  .eye:nth-child(1) {
+    position: absolute;
+    top: 39.2%;
+    left: 46.7%;
+    transform: translate(-50%, -50%);
+    height: 14px;
+  }
+
+  .eye:nth-child(2) {
+    position: absolute;
+    top: 39.2%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    height: 14px;
   }
 }
 
@@ -148,8 +237,31 @@
   }
 }
 
+@media(max-width: 500px) {
+  .small {
+    height: 320px;
+  }
+
+  .eye:nth-child(1) {
+    position: absolute;
+    top: 39.2%;
+    left: 47.3%;
+    transform: translate(-50%, -50%);
+    height: 8px;
+  }
+
+  .eye:nth-child(2) {
+    position: absolute;
+    top: 39.2%;
+    left: 54%;
+    transform: translate(-50%, -50%);
+    height: 8px;
+  }
+}
+
 @media (max-width: 400px) {
   .col .image .data {
     font-size: 1.5rem;
   }
+
 }

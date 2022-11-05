@@ -3,6 +3,7 @@ import { Banner } from '../types/all';
 import classes from '../styles/banner.module.css';
 import Typed from 'typed.js';
 import BlurImage from './BlurImage';
+import Image from 'next/image';
 interface bannerProps {
   bannerData: Banner;
 }
@@ -38,6 +39,22 @@ function Banner(props: bannerProps) {
                 objectFit='contain'
                 priority
               />
+              <div className={classes.eyes}>
+                <img
+                  src='/eye.svg'
+                  className={classes.eye}
+                  alt='eye'
+                  width={15}
+                  height={21}
+                />
+                <img
+                  src='/eye.svg'
+                  className={classes.eye}
+                  alt='eye'
+                  width={15}
+                  height={21}
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -49,6 +66,22 @@ function Banner(props: bannerProps) {
           alt='Rajat Mondal'
           objectFit='contain'
         />
+        <div className={classes.eyes}>
+          <img
+            src='/eye.svg'
+            className={classes.eye}
+            alt='eye'
+            width={15}
+            height={21}
+          />
+          <img
+            src='/eye.svg'
+            className={classes.eye}
+            alt='eye'
+            width={15}
+            height={21}
+          />
+        </div>
       </div>
     </>
   );
