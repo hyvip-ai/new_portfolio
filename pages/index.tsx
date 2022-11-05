@@ -35,7 +35,7 @@ export default function Home(props: Combined) {
         ></meta>
         <link rel='shortcut icon' href='/letter-r.png' type='image/x-icon' />
       </Head>
-      {/* {!introCompleted ? <Intro setIntroCompleted={setIntroCompleted} /> : null} */}
+      {!introCompleted ? <Intro setIntroCompleted={setIntroCompleted} /> : null}
       <NavBar />
       <Progress />
       <main className='main'>
