@@ -128,8 +128,15 @@ export function getStaticProps(): { props: Combined } {
       },
       workExperienceData: [
         {
+          name: 'ABCXchange',
+          timeLine: 'October 2022 - Present',
+          title: 'Technical Consultant',
+          works:
+            'Building Web and Mobile Applications with React JS, Next JS, React Native, Supabase',
+        },
+        {
           name: 'CodeBuddy Pvt. lTd.',
-          timeLine: 'February 2022 - Present',
+          timeLine: 'February 2022 - September 2022',
           title: 'Software Developer',
           works: 'Building Web Applications with React JS',
         },
@@ -447,7 +454,7 @@ export function getStaticProps(): { props: Combined } {
           bgColor: '#DDE8EE',
         },
         {
-          name: 'React',
+          name: 'React & React Native',
           image: '/react.png',
           bgColor: '#ECFCFF',
         },
