@@ -133,6 +133,14 @@
   font-style: italic;
 }
 
+.navbar_film .links .link .link_anim.active {
+  -webkit-text-stroke-color: #fff;
+  -webkit-text-fill-color: black;
+  -webkit-text-stroke-width: 1px;
+  text-shadow: 2px 2px 0 #fff;
+  font-style: italic;
+}
+
 .navbar_film .links .link .link_anim::after {
   content: "";
   display: block;
@@ -151,6 +159,12 @@
   transform-origin: left;
   transform: scaleX(1);
 }
+
+.navbar_film .links .link .link_anim.active::after {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
 
 @media (max-width: 450px) {
   .nav_bar {

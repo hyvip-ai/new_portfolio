@@ -15,7 +15,7 @@ import { v4 as uuid } from 'uuid';
 import Footer from '../components/Footer';
 import { useState } from 'react';
 export default function Home(props: Combined) {
-  const [introCompleted, setIntroCompleted] = useState(false);
+  const [introCompleted, setIntroCompleted] = useState(true);
   return (
     <>
       <Head>
@@ -35,7 +35,7 @@ export default function Home(props: Combined) {
         ></meta>
         <link rel='shortcut icon' href='/letter-r.png' type='image/x-icon' />
       </Head>
-      {!introCompleted ? <Intro setIntroCompleted={setIntroCompleted} /> : null}
+      {/* {!introCompleted ? <Intro setIntroCompleted={setIntroCompleted} /> : null} */}
       <NavBar />
       <Progress />
       <main className='main'>
