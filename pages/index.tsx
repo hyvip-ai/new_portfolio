@@ -15,7 +15,7 @@ import { v4 as uuid } from 'uuid';
 import Footer from '../components/Footer';
 import { useState } from 'react';
 export default function Home(props: Combined) {
-  const [introCompleted, setIntroCompleted] = useState(true);
+  const [introCompleted, setIntroCompleted] = useState(false);
   return (
     <>
       <Head>
