@@ -100,7 +100,7 @@ export function getStaticProps(): { props: Combined } {
       aboutData: {
         title: "Hello, I'm <Rajat />",
         description:
-          'Hi I am Rajat, a 20 years old Web Developer, living in Kolkata, India. I am pursuing Electronics and Communication Engineering, also I am working for some amazing folks at CodeBuddy.<br/>I love JavaScript because I can relate JavaScript to life as its unpredictable.<br/>Also, <b>I know how to google things</b>',
+          'Hi I am Rajat, a 20 years old Web Developer, living in Kolkata, India. I am pursuing Electronics and Communication Engineering, also I am working with some amazing folks at ABCXChange as a Technical Consultant.<br/>I love JavaScript because I can relate JavaScript to life as its unpredictable.<br/>Also, <b>I know how to google things</b>',
         lottieData: {
           src: 'https://assets1.lottiefiles.com/packages/lf20_HpFqiS.json',
           speed: '1',
@@ -508,6 +508,16 @@ export function getStaticProps(): { props: Combined } {
           bgColor: '#ccf8ff',
           name: 'Tailwind CSS',
           image: '/tailwind.png',
+        },
+        {
+          bgColor: '#d4d4d4',
+          name: 'Prisma',
+          image: '/prisma.svg',
+        },
+        {
+          bgColor: '#ffe3ea',
+          name: 'Nest Js',
+          image: '/nest.png',
         },
       ],
     },

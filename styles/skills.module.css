@@ -7,15 +7,19 @@
   cursor: pointer;
   transition: all 0.3s;
 }
+
 .skill_btn:hover {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  scale: 1.03;
 }
+
 .skills {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
 }
+
 .skills p {
   text-align: center;
   font-size: 1.2rem;
@@ -27,12 +31,15 @@
   width: 500px;
   cursor: pointer;
 }
+
 .skillSection {
   padding-bottom: 5rem;
 }
+
 .download_resume_heading_outer {
   position: relative;
 }
+
 .download_resume_heading {
   position: absolute;
   top: 30px;
@@ -46,6 +53,7 @@
     height: 100px;
     width: 300px;
   }
+
   .download_resume_heading_outer {
     margin-bottom: 4rem;
   }
