@@ -23,7 +23,7 @@
 }
 
 .banner .row .col:nth-child(2) {
-  width: 55%;
+  width: 44%;
   margin-top: 8rem;
 }
 
@@ -75,14 +75,13 @@
 
 
 .small {
-  height: 650px;
-  width: 650px;
+  height: 450px;
+  width: 450px;
   overflow: hidden;
-  margin: 0px auto;
-  margin-bottom: -2rem;
+  margin: 32px auto;
   display: none;
-  margin-top: -5rem;
   position: relative;
+  margin-top: -2rem;
 }
 
 .eyes {
@@ -93,8 +92,8 @@
 
 .eye:nth-child(1) {
   position: absolute;
-  top: 37.8%;
-  left: 43.8%;
+  top: 40%;
+  left: 41%;
   height: 25px;
   width: 25px;
   border-radius: 50%;
@@ -106,7 +105,7 @@
   height: 100%;
   width: 100%;
   border-radius: 50%;
-  background: url("/eye.svg");
+  background: url("/big_eye.svg");
   background-repeat: no-repeat;
   background-position: top;
 
@@ -114,12 +113,24 @@
 
 .eye:nth-child(2) {
   position: absolute;
-  top: 37.8%;
-  left: 54%;
+  top: 40%;
+  left: 56.8%;
   transform: translate(-50%, -50%);
   height: 25px;
   width: 25px;
   border-radius: 50%;
+}
+
+.morph {
+  animation: morph 8s ease-in-out infinite;
+  border: 3px solid #2d2e32;
+  border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  width: 100%;
+  aspect-ratio: 1/1;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #BAB6B3;
 }
 
 @media (max-width: 1200px) {
@@ -131,10 +142,16 @@
     font-size: 2.5rem;
   }
 
+  .eye::after {
+    background: url("/eye.svg");
+    background-repeat: no-repeat;
+    background-position: top;
+  }
+
   .eye:nth-child(1) {
     position: absolute;
-    top: 40%;
-    left: 43.8%;
+    top: 41.5%;
+    left: 41%;
     transform: translate(-50%, -50%);
     height: 22px;
     width: 22px;
@@ -142,8 +159,8 @@
 
   .eye:nth-child(2) {
     position: absolute;
-    top: 40%;
-    left: 54%;
+    top: 41.5%;
+    left: 56%;
     transform: translate(-50%, -50%);
     height: 22px;
     width: 22px;
@@ -159,20 +176,20 @@
 
   .eye:nth-child(1) {
     position: absolute;
-    top: 42%;
-    left: 43.5%;
+    top: 43.5%;
+    left: 41%;
     transform: translate(-50%, -50%);
-    height: 18px;
-    width: 18px;
+    height: 20px;
+    width: 20px;
   }
 
   .eye:nth-child(2) {
     position: absolute;
-    top: 42%;
-    left: 54%;
+    top: 43.5%;
+    left: 56%;
     transform: translate(-50%, -50%);
-    height: 18px;
-    width: 18px;
+    height: 20px;
+    width: 20px;
   }
 
 }
@@ -209,52 +226,36 @@
   }
 
   .eye::after {
-    background-image: url("/eye.svg");
+    background-image: url("/big_eye.svg");
   }
 
   .eye:nth-child(1) {
     position: absolute;
-    top: 37.5%;
-    left: 44%;
+    top: 37.8%;
+    left: 41.2%;
     transform: translate(-50%, -50%);
-    height: 25px;
-    width: 25px;
+    height: 20px;
+    width: 20px;
   }
 
   .eye:nth-child(2) {
     position: absolute;
-    top: 37.5%;
-    left: 54%;
+    top: 37.8%;
+    left: 56%;
     transform: translate(-50%, -50%);
-    height: 25px;
-    width: 25px;
+    height: 20px;
+    width: 20px;
   }
 }
 
 @media(max-width:650px) {
 
   .small {
-    width: 500px;
-    height: 500px;
+    width: 450px;
+    height: 450px;
   }
 
-  .eye:nth-child(1) {
-    position: absolute;
-    top: 37.8%;
-    left: 44.2%;
-    transform: translate(-50%, -50%);
-    height: 18px;
-    width: 18px;
-  }
 
-  .eye:nth-child(2) {
-    position: absolute;
-    top: 37.8%;
-    left: 54%;
-    transform: translate(-50%, -50%);
-    height: 18px;
-    width: 18px;
-  }
 }
 
 @media (max-width: 600px) {
@@ -284,19 +285,19 @@
   .eye:nth-child(1) {
     position: absolute;
     top: 37.5%;
-    left: 44%;
+    left: 41.8%;
     transform: translate(-50%, -50%);
-    height: 13px;
-    width: 13px;
+    height: 16px;
+    width: 16px;
   }
 
   .eye:nth-child(2) {
     position: absolute;
     top: 37.5%;
-    left: 54%;
+    left: 56%;
     transform: translate(-50%, -50%);
-    height: 13px;
-    width: 13px;
+    height: 16px;
+    width: 16px;
   }
 }
 
@@ -305,4 +306,18 @@
     font-size: 1.5rem;
   }
 
+}
+
+@keyframes morph {
+  0% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+
+  50% {
+    border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+  }
+
+  100% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
 }

@@ -14,6 +14,7 @@ import Skills from '../components/Skills';
 import { v4 as uuid } from 'uuid';
 import Footer from '../components/Footer';
 import { useState } from 'react';
+import Terminal from '../components/Terminal';
 export default function Home(props: Combined) {
   const [introCompleted, setIntroCompleted] = useState(false);
   return (
@@ -61,6 +62,7 @@ export default function Home(props: Combined) {
           <Contact contactDetails={props.contactDetails} />
         </main>
         <Footer socialLinks={props.socialLinks} />
+        <Terminal />
       </main>
     </>
   );

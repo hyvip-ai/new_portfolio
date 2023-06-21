@@ -4,7 +4,6 @@ import { Banner } from '../types/all';
 import classes from '../styles/banner.module.css';
 import Typed from 'typed.js';
 import BlurImage from './BlurImage';
-import Image from 'next/image';
 interface bannerProps {
   bannerData: Banner;
 }
@@ -71,6 +70,7 @@ function Banner(props: bannerProps) {
           </div>
           <div className={classes.col}>
             <div className={`${classes.image} image`}>
+              <div className={classes.morph}></div>
               <BlurImage
                 src='/me_avatar_without_eyes.png'
                 alt='Rajat Mondal'
@@ -93,6 +93,7 @@ function Banner(props: bannerProps) {
         </div>
       </section>
       <div className={`${classes.small} image`}>
+        <div className={classes.morph}></div>
         <BlurImage
           src='/me_avatar_without_eyes.png'
           layout='fill'

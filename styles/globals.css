@@ -366,3 +366,20 @@ body::-webkit-scrollbar-thumb {
     font-size: 40px;
   }
 }
+
+.terminal {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  border-radius: 16px;
+  padding: 8px 16px;
+  background-color: #56f0c7;
+  color: #2c3e50;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  cursor: pointer;
+}
+
+.terminal:active {
+  transform: scale(0.95);
+}
