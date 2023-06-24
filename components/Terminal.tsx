@@ -2,7 +2,7 @@ import React from 'react';
 
 function Terminal() {
   const handleClick = () => {
-    window.open('https://rajat-mondal-termional-portfolio.netlify.app/');
+    window.open('https://rajat-mondal-terminal-portfolio.netlify.app/');
   };
   return (
     <button className='terminal' onClick={handleClick}>
