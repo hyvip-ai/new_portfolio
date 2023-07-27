@@ -64,6 +64,18 @@ a {
 
 .animate {
   transform: translateY(100px);
+  position: relative;
+}
+
+.lineThrough {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 0%;
+  transform: translateY(-50%);
+  height: 3px;
+  background-color: #4b4b4b;
+
 }
 
 body::-webkit-scrollbar {

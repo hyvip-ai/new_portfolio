@@ -19,6 +19,9 @@ function Intro({ setIntroCompleted }: IntroProps) {
       .to('#intro', { backgroundColor: 'rgb(22,22,22)', duration: 0 })
       .to('.text_container', { opacity: 0, duration: 0.3 }, '-=0.2')
       .fromTo('.animate', { y: 100 }, { y: 0, stagger: 0.2 })
+      .fromTo('.comments', { opacity: 0 }, { opacity: 1 })
+      .fromTo('.animateColor', { color: '#fff' }, { color: '#4b4b4b' }, '-=0.5')
+      .fromTo('.lineThrough', { width: '0%' }, { width: '100%' }, '-=0.4')
       .to(
         '.animate',
         {
@@ -81,8 +84,10 @@ function Intro({ setIntroCompleted }: IntroProps) {
             </h1>
           </div>
           <div className={classes.text}>
-            <h1 className='animate'>
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sleep(&nbsp;);
+            <h1 className='animate animateColor'>
+              <span className='comments'>{'//'}</span>
+              &nbsp;&nbsp;sleep(&nbsp;);
+              <div className='lineThrough'></div>
             </h1>
           </div>
           <div className={classes.text}>
